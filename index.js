@@ -15,7 +15,7 @@ var methodOverride = require("method-override");
 mongoose.connect("mongodb://localhost/fotos");
 //Middle que me permite servir archivos estaticos (ej: css, js)
 app.use("/public", express.static("public"));
-//Middle que me permite parsear application/json
+//Middle que me permite parsear application/json  
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 //Middleware que nos permite manejar verbos REST que no implementa el navegador
